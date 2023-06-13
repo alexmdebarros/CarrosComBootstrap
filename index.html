@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <title>Carros Novos</title>
+    <style>
+        header {
+            background-color: rgb(158, 196, 254);
+        }
+
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 32px;
+        }
+
+        .carousel-inner {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .row,
+        #novidades {
+            padding-top: 32px;
+        }
+
+        footer {
+            background-color: rgb(158, 196, 254);
+            padding: 8px;
+        }
+        .row{
+            padding-bottom: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>Carros Novos</h1>
+                    <button data-bs-toggle="collapse" data-bs-target="#menu" type="button" class="navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="#inicio" class="nav-link active">Início</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#novidades" class="nav-link">Novidades</a>
+                            </li>                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="carousel-container" id="inicio">
+            <div id="carousel-carros" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img class="w-100" src="./img/Peugeot-208-Griffe-2023.jpg" alt="Peugeot 208 Griffe 2023 preto">
+                        <div class="carousel-caption">
+                            <h2>Peugeot 208 Griff 2023</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="w-100" src="./img/audi-a3.jpg" alt="audi a3 2023">
+                        <div class="carousel-caption">
+                            <h2>Audi A3 2023</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="w-100" src="./img/Novo-Classe-C_10.jpg" alt="mercedez classe c 2023">
+                        <div class="carousel-caption">
+                            <h2>Novo Mercedez Classe C 2023</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-carros" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-carros" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-carros" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-carros" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-carros" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+
+        
+            
+        <div class="container-cards">
+            <h1 id="novidades">Novidades</h1>
+            <div class="row">            
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        
+                        <img src="./img/Peugeot-208-Griffe-2023.jpg" alt="imagem">
+                        <div class="card-body">
+                            <h4 class="card-title">Título Card</h4>
+                            <h5 class="card-subtitle">Subtítulo do card</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis, quam, repellendus autem dolorum temporibus eos ducimus sint ipsa sunt sapiente. Praesentium eum tenetur autem ea deleniti aut omnis aperiam?</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        
+                        <img src="./img/audi-a3.jpg" alt="imagem">
+                        <div class="card-body">
+                            <h4 class="card-title">Título Card</h4>
+                            <h5 class="card-subtitle">Subtítulo do card</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis, quam, repellendus autem dolorum temporibus eos ducimus sint ipsa sunt sapiente. Praesentium eum tenetur autem ea deleniti aut omnis aperiam?</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        
+                        <img src="./img/Novo-Classe-C_10.jpg" alt="imagem">
+                        <div class="card-body">
+                            <h4 class="card-title">Título Card</h4>
+                            <h5 class="card-subtitle">Subtítulo do card</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis, quam, repellendus autem dolorum temporibus eos ducimus sint ipsa sunt sapiente. Praesentium eum tenetur autem ea deleniti aut omnis aperiam?</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            &copy; Todos os Direitos reservado -  2023
+        </footer>
+    </div>
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
